@@ -28,7 +28,7 @@ public class Login_Page extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        QuitBtn = new javax.swing.JButton();
         RegisterBtn = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -49,8 +49,13 @@ public class Login_Page extends javax.swing.JFrame {
 
         jPasswordField1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
 
-        jButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jButton1.setText("Login");
+        QuitBtn.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        QuitBtn.setText("Quit");
+        QuitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuitBtnActionPerformed(evt);
+            }
+        });
 
         RegisterBtn.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         RegisterBtn.setText("Don't have an Account? Sign up");
@@ -75,20 +80,20 @@ public class Login_Page extends javax.swing.JFrame {
                         .add(18, 18, 18)
                         .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 210, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(layout.createSequentialGroup()
-                        .add(60, 60, 60)
-                        .add(RegisterBtn))
-                    .add(layout.createSequentialGroup()
                         .add(70, 70, 70)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                             .add(layout.createSequentialGroup()
                                 .add(jButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 87, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .add(78, 78, 78)
-                                .add(jButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 87, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                .add(QuitBtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 87, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(layout.createSequentialGroup()
                                 .add(jLabel2)
                                 .add(18, 18, 18)
                                 .add(jPasswordField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 210, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))))
                 .add(123, 123, 123))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                .add(RegisterBtn)
+                .add(148, 148, 148))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -108,9 +113,10 @@ public class Login_Page extends javax.swing.JFrame {
                 .add(77, 77, 77)
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(168, 168, 168)
-                .add(RegisterBtn))
+                    .add(QuitBtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(40, 40, 40)
+                .add(RegisterBtn)
+                .addContainerGap())
         );
 
         pack();
@@ -121,11 +127,12 @@ public class Login_Page extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void RegisterBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterBtnActionPerformed
-        Register reg = new Register();
-        reg.setVisible(true);
-        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_RegisterBtnActionPerformed
+
+    private void QuitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuitBtnActionPerformed
+        System.exit();        // TODO add your handling code here:
+    }//GEN-LAST:event_QuitBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,8 +170,8 @@ public class Login_Page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton QuitBtn;
     private javax.swing.JButton RegisterBtn;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
