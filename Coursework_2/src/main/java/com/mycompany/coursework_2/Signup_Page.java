@@ -35,6 +35,7 @@ public class Signup_Page extends javax.swing.JFrame {
         EmailField = new javax.swing.JTextField();
         CreateLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
+        SignupBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,10 +63,19 @@ public class Signup_Page extends javax.swing.JFrame {
         CreateLbl.setText("Create an account");
 
         backBtn.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        backBtn.setText("Back Button");
+        backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBtnActionPerformed(evt);
+            }
+        });
+
+        SignupBtn.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        SignupBtn.setText("Signup");
+        SignupBtn.setPreferredSize(new java.awt.Dimension(73, 31));
+        SignupBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignupBtnActionPerformed(evt);
             }
         });
 
@@ -85,16 +95,20 @@ public class Signup_Page extends javax.swing.JFrame {
                         .addComponent(CreateLbl))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(59, 59, 59)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(passwordLbl)
+                            .addComponent(emailLbl)
+                            .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backBtn)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(passwordLbl)
-                                    .addComponent(emailLbl))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(EmailField, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE)
-                                    .addComponent(passTxt))))))
+                                    .addComponent(passTxt)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(SignupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(23, 23, 23)))))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -115,7 +129,9 @@ public class Signup_Page extends javax.swing.JFrame {
                     .addComponent(emailLbl)
                     .addComponent(EmailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
-                .addComponent(backBtn)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backBtn)
+                    .addComponent(SignupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148))
         );
 
@@ -128,8 +144,12 @@ public class Signup_Page extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         Signup_Page sign = new Signup_Page();
-        sign.dispose();// TODO add your handling code here:
+        sign.setVisible(false);// TODO add your handling code here:
     }//GEN-LAST:event_backBtnActionPerformed
+
+    private void SignupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SignupBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,6 +189,7 @@ public class Signup_Page extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CreateLbl;
     private javax.swing.JTextField EmailField;
+    private javax.swing.JButton SignupBtn;
     private javax.swing.JButton backBtn;
     private javax.swing.JLabel emailLbl;
     private javax.swing.JTextField passTxt;
