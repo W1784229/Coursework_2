@@ -10,11 +10,11 @@ package com.mycompany.coursework_2;
  * @author w1784229
  */
 public class Login_Page extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form Login_Page
      */
-    public Login_Page() {
+    public Login_Page()  {
         initComponents();
     }
 
@@ -38,6 +38,7 @@ public class Login_Page extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         passwordLbl.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         passwordLbl.setText("Password:");
@@ -95,10 +96,6 @@ public class Login_Page extends javax.swing.JFrame {
                     .addComponent(WelcomeLbl))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(152, 152, 152)
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addComponent(LoginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
@@ -106,6 +103,10 @@ public class Login_Page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(152, 152, 152)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,8 +140,10 @@ public class Login_Page extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.toBack();
         Signup_Page sign = new Signup_Page();
-        sign.setVisible(true);        // TODO add your handling code here:
+        sign.setVisible(true);
+        sign.toFront();        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

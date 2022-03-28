@@ -143,8 +143,10 @@ public class Signup_Page extends javax.swing.JFrame {
     }//GEN-LAST:event_userTxtActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
-        Signup_Page sign = new Signup_Page();
-        sign.setVisible(false);// TODO add your handling code here:
+        this.toBack();
+        setVisible(false);// TODO add your handling code here:
+        new Login_Page().toFront();
+        new Login_Page().setState(java.awt.Frame.NORMAL);
     }//GEN-LAST:event_backBtnActionPerformed
 
     private void SignupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupBtnActionPerformed
