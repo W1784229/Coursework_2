@@ -36,10 +36,13 @@ public class Signup_Page extends javax.swing.JFrame {
         CreateLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
         SignupBtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         passTxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        getContentPane().add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 332, 227, -1));
 
         userTxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         userTxt.addActionListener(new java.awt.event.ActionListener() {
@@ -47,20 +50,26 @@ public class Signup_Page extends javax.swing.JFrame {
                 userTxtActionPerformed(evt);
             }
         });
+        getContentPane().add(userTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 293, 227, -1));
 
         userLbl.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         userLbl.setText("Username:");
+        getContentPane().add(userLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 296, -1, -1));
 
         passwordLbl.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         passwordLbl.setText("Password:");
+        getContentPane().add(passwordLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(94, 335, -1, -1));
 
         emailLbl.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         emailLbl.setText("Email Address:");
+        getContentPane().add(emailLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 374, -1, -1));
 
         EmailField.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        getContentPane().add(EmailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 371, 227, -1));
 
         CreateLbl.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         CreateLbl.setText("Create an account");
+        getContentPane().add(CreateLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 73, -1, -1));
 
         backBtn.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         backBtn.setText("Back");
@@ -69,6 +78,7 @@ public class Signup_Page extends javax.swing.JFrame {
                 backBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 571, 89, -1));
 
         SignupBtn.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         SignupBtn.setText("Signup");
@@ -78,62 +88,10 @@ public class Signup_Page extends javax.swing.JFrame {
                 SignupBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(SignupBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(311, 571, 89, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(91, 91, 91)
-                        .addComponent(userLbl)
-                        .addGap(18, 18, 18)
-                        .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(146, 146, 146)
-                        .addComponent(CreateLbl))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(passwordLbl)
-                            .addComponent(emailLbl)
-                            .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(EmailField, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE)
-                                    .addComponent(passTxt)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(SignupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(23, 23, 23)))))
-                .addContainerGap(77, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addComponent(CreateLbl)
-                .addGap(192, 192, 192)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(userLbl))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(passwordLbl))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(emailLbl)
-                    .addComponent(EmailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backBtn)
-                    .addComponent(SignupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\w1784229\\Pictures\\d443331f98d9d762469790e530a70567.jpg")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-570, 0, 1070, 880));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -194,6 +152,7 @@ public class Signup_Page extends javax.swing.JFrame {
     private javax.swing.JButton SignupBtn;
     private javax.swing.JButton backBtn;
     private javax.swing.JLabel emailLbl;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField passTxt;
     private javax.swing.JLabel passwordLbl;
     private javax.swing.JLabel userLbl;

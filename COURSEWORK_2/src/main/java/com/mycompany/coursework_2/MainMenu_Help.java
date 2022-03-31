@@ -113,9 +113,9 @@ public class MainMenu_Help extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void HelpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HelpBtnActionPerformed
-        MainMenu_Help help1 = new MainMenu_Help();
-        help1.setVisible(true);
-        help1.toFront();
+        MainMenu_Help help = new MainMenu_Help();
+        help.setVisible(true);
+        help.toFront();
     }//GEN-LAST:event_HelpBtnActionPerformed
 
     private void QuitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuitBtnActionPerformed
@@ -123,7 +123,9 @@ public class MainMenu_Help extends javax.swing.JFrame {
     }//GEN-LAST:event_QuitBtnActionPerformed
 
     private void SettingsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsBtnActionPerformed
-        // TODO add your handling code here:
+        MainMenu_Setting Setting = new MainMenu_Setting();
+        Setting.setVisible(true);
+        Setting.toFront();
     }//GEN-LAST:event_SettingsBtnActionPerformed
 
     private void LanguageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LanguageBtnActionPerformed
