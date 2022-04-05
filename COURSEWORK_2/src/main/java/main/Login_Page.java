@@ -100,8 +100,6 @@ public class Login_Page extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 532, 90, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\w1784229\\Pictures\\d443331f98d9d762469790e530a70567.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-560, -50, 1060, 800));
 
         pack();

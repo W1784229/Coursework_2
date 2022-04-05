@@ -89,8 +89,6 @@ public class Signup_Page extends javax.swing.JFrame {
             }
         });
         getContentPane().add(SignupBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(311, 571, 89, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\w1784229\\Pictures\\d443331f98d9d762469790e530a70567.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-570, 0, 1070, 880));
 
         pack();
