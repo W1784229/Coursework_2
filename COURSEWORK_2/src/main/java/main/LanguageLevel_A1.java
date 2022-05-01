@@ -160,10 +160,10 @@ public class LanguageLevel_A1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
-       MainMenu_LanguageLevel back=MainMenu_LanguageLevel();
-       back.setVisible(true);
-       back.toFront();
+    private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {                                        
+       MainMenu_LanguageLevel back= new MainMenu_LanguageLevel();
+       back.show();
+       dispose();
     }//GEN-LAST:event_backbtnActionPerformed
 
     private void OrderbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderbtnActionPerformed
